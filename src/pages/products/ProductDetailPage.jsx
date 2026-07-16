@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { useParams } from "react-router";
 
 const ProductDetailPage = () => {
-  const { abc } = useParams();
+  const { prodId } = useParams();
   const [singleProduct, setSingleProducts] = useState();
   // fetch('https://fakestoreapi.com/products/1')
   const fetchSingleProduct = async () => {
