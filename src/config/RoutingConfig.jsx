@@ -12,6 +12,7 @@ const RoutingConfig = () => {
     <>
       <BrowserRouter>
         <Routes>
+          {/* public routes */}
           <Route path="/" element={<MainLayout />}>
             <Route index element={<HomePage />} />
             <Route path="login" element={<LoginPage />} />
@@ -21,6 +22,12 @@ const RoutingConfig = () => {
             <Route path="category/:catId" element={<CategoryPage />} />
             <Route path="*" element={<NotFoundPage />} />
           </Route>
+          {/* Admin */}
+          {/* <Route path="/admin" element={<AdminLayout />}>
+            <Route index element={<AdminDashboard />} />
+            <Route path="/product" element={<ProductPage/>}/>
+            <Route path="*" element={<NotFoundPage />} />
+          </Route> */}
         </Routes>
       </BrowserRouter>
     </>
