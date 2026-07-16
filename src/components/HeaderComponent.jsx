@@ -61,7 +61,7 @@ const HeaderComponent = () => {
 
               {cat.map((item, index) => (
                 <li key={index}>
-                  <NavLink to={`/products`} className={navLinkClass}>
+                  <NavLink to={`/category/${item}`} className={navLinkClass}>
                     {item}
                   </NavLink>
                 </li>

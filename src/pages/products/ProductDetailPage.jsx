@@ -3,6 +3,7 @@ import { useParams } from "react-router";
 
 const ProductDetailPage = () => {
   const { prodId } = useParams();
+
   const [singleProduct, setSingleProducts] = useState();
   // fetch('https://fakestoreapi.com/products/1')
   const fetchSingleProduct = async () => {
@@ -148,7 +149,6 @@ const ProductDetailPage = () => {
         </div>
       </section>
     </>
-  
   );
 };
 export default ProductDetailPage;

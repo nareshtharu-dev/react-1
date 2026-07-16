@@ -5,6 +5,7 @@ import RegisterPage from "../pages/auth/RegisterPage";
 import HomePage from "../pages/home/HomePage";
 import NotFoundPage from "../pages/NotFoundPage";
 import ProductDetailPage from "../pages/products/ProductDetailPage";
+import CategoryPage from "../pages/category/Category";
 
 const RoutingConfig = () => {
   return (
@@ -17,6 +18,7 @@ const RoutingConfig = () => {
             <Route path="register" element={<RegisterPage />} />
             {/* <Route path="/products" element={<ProductListPage />} /> */}
             <Route path="products/:prodId" element={<ProductDetailPage />} />
+            <Route path="category/:catId" element={<CategoryPage />} />
             <Route path="*" element={<NotFoundPage />} />
           </Route>
         </Routes>
